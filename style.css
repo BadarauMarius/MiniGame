@@ -40,8 +40,6 @@ body {
     filter: blur(0.2px);
 }
 
-
-
 .Arena {
     display: flex;
     justify-content: space-around;
@@ -51,8 +49,9 @@ body {
 }
 
 .Dwarf {
-    /* display: none; */
-    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
     height: 550px;
     background-image: url(./assets/9.jpg);
     background-size: cover;
@@ -60,7 +59,7 @@ body {
     /* border: 0.5px solid #fff; */
     inset: 0 0 15px #0f0 ;
     animation: animate 5s linear infinite;
-    border-radius: 15px 50px;
+    border-radius: 0px 150px;
     transition: 1s;
 }
 
@@ -79,11 +78,12 @@ body {
 }
 
 .Sprite {
-    /* display: none; */
-    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
     height: 550px;
     background-image: url(./assets/8.jpg);
-    border-radius: 15px;
+    border-radius: 150px;
     background-size: cover;
     background-position: center;
     /* border: 0.5px solid #fff; */
@@ -107,8 +107,9 @@ body {
 }
 
 .Dragon {
-    /* display: none; */
-    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
     height: 550px;
     background-image: url(./assets/10.jpg);
     background-size: cover;
@@ -116,7 +117,7 @@ body {
     /* border: 0.5px solid #fff; */
     inset: 0 0 15px #0f0 ;
     animation: animate 5s linear infinite;
-    border-radius: 50px 15px;
+    border-radius: 150px 0px;
     transition: 1s;
 }
 
@@ -134,48 +135,16 @@ body {
     margin-left: 30%;
 }
 
-@keyframes animate {
-    0% {
-        box-shadow: 0 0 10px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
-        filter: hue-rotate(0deg);
-    }
-
-    20% {
-        box-shadow: 0 0 20px rgb(255, 196, 0), inset 0 0 20px rgb(255, 196, 0);
-        filter: hue-rotate(0deg);
-    }
-
-    40% {
-        box-shadow: 0 0 5px rgb(0, 255, 213), inset 0 0 5px rgb(0, 255, 213);
-        filter: hue-rotate(0deg);
-    }
-
-    60% {
-        box-shadow: 0 0 40px rgb(255, 72, 0), inset 0 0 40px rgb(255, 72, 0);
-        filter: hue-rotate(0deg);
-    }
-
-    80% {
-        box-shadow: 0 0 20px #0f0, inset 0 0 20px #0f0;
-        filter: hue-rotate(0deg);
-    }
-
-    100% {
-        box-shadow: 0 0 10px rgb(255, 0, 0), inset 0 0 10px rgb(255, 0, 0);
-        filter: hue-rotate(0deg);
-    }
-}
-
 p { 
-    font-size: 1.5em;
-    color: #092919;
-    text-shadow: 2px 2px 3px #fafaf5;
+    font-size: 3.5em;
+    color: #eef3f5;
+    text-shadow: 2px 2px 3px #080800;
     margin-top: 150%;
     margin-left: 20px;
 }
 
 #button {
-    background-color: whitesmoke;
+    background-color:  linear-gradient(rgba(253, 6, 6, 0.5), rgba(86, 252, 9, 0.5));
     border: 0.5px snow;
     margin-left: 50%;
     transform: translate(-50%, -50%);
@@ -184,8 +153,66 @@ p {
     animation: animate 5s linear infinite;
     border-radius: 50px 50px;
     transition: 1s;
-    font-size: 0.6em;
+    font-size: 3em;
     cursor: pointer;
+    
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 5px rgb(255, 0, 0), inset 0 0 15px rgb(248, 246, 246);
+        filter: hue-rotate(0deg);
+    }
+
+    10% {
+        box-shadow: 0 0 10px rgb(255, 196, 0), inset 0 0 20px rgb(250, 4, 16);
+        filter: hue-rotate(0deg);
+    }
+
+    20% {
+        box-shadow: 0 0 15px rgb(44, 247, 3), inset 0 0 25px rgb(248, 3, 195);
+        filter: hue-rotate(0deg);
+    }
+
+    30% {
+        box-shadow: 0 0 20px rgb(3, 248, 248), inset 0 0 30px  rgb(171, 3, 248);
+        filter: hue-rotate(0deg);
+    }
+
+    40% {
+        box-shadow: 0 0 30px rgb(0, 255, 213), inset 0 0 40px rgb(40, 4, 247);
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        box-shadow: 0 0 50px rgb(4, 118, 248), inset 0 0 50px  rgb(4, 118, 248);
+        filter: hue-rotate(0deg);
+    }
+
+    60% {
+        box-shadow: 0 0 30px rgb(40, 4, 247), inset 0 0 40px  rgb(0, 255, 213);
+        filter: hue-rotate(0deg);
+    }
+
+    70% {
+        box-shadow: 0 0 20px rgb(171, 3, 248), inset 0 0 30px rgb(3, 248, 248);
+        filter: hue-rotate(0deg);
+    }
+
+    80% {
+        box-shadow: 0 0 15px rgb(248, 3, 195), inset 0 0 25px  rgb(44, 247, 3);
+        filter: hue-rotate(0deg);
+    }
+
+    90% {
+        box-shadow: 0 0 10px rgb(250, 4, 16), inset 0 0 20px rgb(255, 196, 0);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgb(252, 250, 250), inset 0 0 15px rgb(255, 0, 0);
+        filter: hue-rotate(0deg);
+    }
 }
 
 

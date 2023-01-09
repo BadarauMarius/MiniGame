@@ -109,9 +109,9 @@ let sprite = new Sprite("Elrond", 35);
 let dragon = new Dragon("Smaug" , 45);
 
 let epicFight = new Fight(dwarf, sprite, );
-
-
 epicFight.go()
+
+
 
 
 
